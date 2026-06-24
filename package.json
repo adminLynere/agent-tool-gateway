@@ -1,0 +1,23 @@
+{
+  "name": "@adminlynere/agent-tool-gateway",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Frontera técnica L3/L4: allowlist · budgets · idempotencia · audit · L4→Approval (Notion).",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "eslint": "^9.18.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.21.0",
+    "vitest": "^3.0.4"
+  }
+}
