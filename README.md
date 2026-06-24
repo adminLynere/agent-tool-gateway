@@ -36,5 +36,11 @@ pnpm build         # tsc -> dist/
 pnpm test          # vitest
 ```
 
-CI: `.github/workflows/ci.yml` (lint + build + test). Equivale al reusable
-`adminLynere/infra/.github/workflows/reusable-node-ci.yml`.
+CI: `.github/workflows/ci.yml` (lint + build + test) en `main` y `development`. Equivale al
+reusable `adminLynere/infra/.github/workflows/reusable-node-ci.yml`.
+
+## Flujo de ramas (gobernanza)
+
+`feature/* → development → main` (misma convención que `lynere`). PRs **contra `development`**;
+`development` se promociona a `main` (release). **Merge a `main` = aprobación humana** (L4). El plan
+free de la org no permite branch protection en privados → la regla se aplica **por convención**.
